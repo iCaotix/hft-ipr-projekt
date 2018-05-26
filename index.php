@@ -58,23 +58,26 @@
           <div class="modal-body">
             Login into your FriendsBook Account!
             <!--Login-->
+            <form action="index.php" method="post">
+
             <div class="input-group input-group-sm mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
               </div>
-              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              <input type="text" class="form-control" name="loginName" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
               </div>
-              <input type="password" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              <input type="password" class="form-control" name="loginPassword" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
           </div>
+        </form>
         </div>
       </div>
     </div>
@@ -91,6 +94,8 @@
       <div class="modal-body">
         Join our Community now! #friends
         <!--Register-->
+        <form action="index.php" method="post">
+
       <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
@@ -113,13 +118,29 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create Account</button>
+        <button type="submit" class="btn btn-primary">Create Account</button>
       </div>
     </div>
   </div>
 </div>
 <h1>Hello, world!</h1>
 <h2> Test Commit </h2>
+
+
+LoginModalData:
+Welcome <?php echo $_POST["loginName"]; ?><br>
+Your Password is: <?php echo $_POST["loginPassword"]; ?><br>
+<br>
+RegisterModalData:
+Welcome <?php echo $_POST["registerName"]; ?><br>
+Your Password is: <?php echo $_POST["registerPassword"]; ?><br>
+Your Mail Adress is: <?php echo $_POST["registerMail"]; ?><br>
+
+
+
+
+
+
 
 
 
