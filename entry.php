@@ -1,4 +1,53 @@
+<?php
 
+  if(isset($_POST['tan'])){
+    addEntry();
+    consumeTan($_POST['tan']);
+
+  }
+
+ function addEntry() {
+
+ }
+
+function consumeTan($tan) {
+  //Stelle DB verbindung her
+  $user = 'root';
+  $password = 'root';
+  $db = 'friendsbook';
+  $host = 'localhost';
+  $port = 3306;
+
+  $database = new mysqli($host, $user, $password, $db, $port);
+
+  if ($database->connect_error) {
+    die('Connect Error (' . $database->connect_errno . ') ' . $database->connect_error);
+  }
+
+  //Stelle sicher dass die Tan noch verfügbar ist.
+  $abfrage = "SELECT `used`, `tan` FROM `tans` WHERE `tan` = '" . $tan . "'";
+  $ergebnis = mysqli_query($database, $abfrage);
+
+  $resultStr = "";
+
+  while ($row = $ergebnis->fetch_assoc()) {
+    $resultStr = $resultStr . $row["used"] . '  ' . $row["tan"] . '<br>';
+    if($row["used"] == 1){
+      echo "Tan schon verbraucht";
+      return;
+    }
+
+  }
+
+  //echo $resultStr;
+
+  //Setzte Tan auf verbraucht
+  $update = $database->query("UPDATE `tans` SET `used`= true WHERE `tan` = '" . $_POST['tan'] . "'");
+
+  echo "Tan verbraucht " . $_POST['tan'];
+}
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +56,7 @@
 
   <body>
 
-    <form id="entry-form" action="php/addEntry.php" method="post">
+    <form id="entry-form" action="entry.php" method="post">
       Vorname:<br>
       <input type="text" name="vorname"><br>
       Nachname:<br>
