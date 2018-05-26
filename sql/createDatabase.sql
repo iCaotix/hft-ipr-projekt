@@ -1,0 +1,1 @@
+CREATE TABLE `friendsbook`.`tans` ( `id` INT NOT NULL AUTO_INCREMENT , `tan` VARCHAR(13) NOT NULL , `used` BOOLEAN NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
