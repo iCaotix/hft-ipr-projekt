@@ -1,9 +1,11 @@
 <?php
 
   if(isset($_POST['tan'])){
-    addEntry();
-    consumeTan($_POST['tan']);
-
+    //echo "Tan ->" . $_POST['tan'] . "<-";
+    if($_POST['tan'] != ""){
+      addEntry();
+      consumeTan($_POST['tan']);
+    }
   }
 
  function addEntry() {
@@ -28,6 +30,11 @@ function consumeTan($tan) {
   $abfrage = "SELECT `used`, `tan` FROM `tans` WHERE `tan` = '" . $tan . "'";
   $ergebnis = mysqli_query($database, $abfrage);
 
+  if($ergebnis->num_rows == 0){
+    echo "Tan nicht vergeben";
+    return;
+  }
+
   $resultStr = "";
 
   while ($row = $ergebnis->fetch_assoc()) {
@@ -51,7 +58,7 @@ function consumeTan($tan) {
 <!doctype html>
 <html lang="en">
 <head>
-  <script src="js/newEntry.js"></script>
+  <script src="js/entry.js"></script>
 </head>
 
   <body>
@@ -65,7 +72,8 @@ function consumeTan($tan) {
       <input type="text" name="email"><br>
       Nachricht:<br>
       <input type="text" name="eintrag"><br>
-      <input type="hidden" name="tan" value="<?php echo $_GET["tan"]?>"><br>
+      Tan:<br>
+      <input type="text" name="tan"><br>
       <input id="absenden" type="submit" value="Abschicken">
       <button type="reset">Loeschen</button>
 
