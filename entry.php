@@ -13,18 +13,7 @@
  }
 
 function consumeTan($tan) {
-  //Stelle DB verbindung her
-  $user = 'root';
-  $password = 'root';
-  $db = 'friendsbook';
-  $host = 'localhost';
-  $port = 3306;
-
-  $database = new mysqli($host, $user, $password, $db, $port);
-
-  if ($database->connect_error) {
-    die('Connect Error (' . $database->connect_errno . ') ' . $database->connect_error);
-  }
+  require('dbConnect.php'); //Erstellt variable mit dem namen $database
 
   //Stelle sicher dass die Tan noch verfügbar ist.
   $abfrage = "SELECT `used`, `tan` FROM `tans` WHERE `tan` = '" . $tan . "'";
