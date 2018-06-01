@@ -1,7 +1,28 @@
 New Entry:
 
-Vorname:
-Nachname:
-Geburtstag:
+Vorname*:
+Nachname*:
+Geburtstag*:
 Wohnort:
 Straße:
+
+Woher kennen wir uns*:
+Festnetz:
+Handynummer:
+E-Mail*:
+
+Hobbys*:
+Berufswunsch:
+Das könnte ich jeden Tag essen:
+Was ich auf eine einsame Insel mitnehmen würde:
+
+Lieblingsfilm:
+Lieblingssport:
+Lieblingsschauspieler:
+Lieblingstier:
+
+Lieblings alkoholisches Getränk:
+Meine lieblings Suffgeschichte:
+Letzter Absturz:
+Lieblings Trinkspiel:
+
