@@ -1,0 +1,7 @@
+New Entry:
+
+Vorname:
+Nachname:
+Geburtstag:
+Wohnort:
+Straße:
