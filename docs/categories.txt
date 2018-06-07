@@ -20,6 +20,8 @@ Lieblingsfilm:
 Lieblingssport:
 Lieblingsschauspieler:
 Lieblingstier:
+Lieblingsmusik (Genre, Interpret, Titel):
+Lieblingsgame:
 
 Lieblings alkoholisches Getränk:
 Meine lieblings Suffgeschichte:
