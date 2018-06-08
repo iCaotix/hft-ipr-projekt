@@ -61,7 +61,7 @@
           <div class="modal-body">
             Login into your FriendsBook Account!
             <!--Login-->
-            <form action="index.php" method="post">
+            <form id="login-form" action="index.php" method="post">
 
             <div class="input-group input-group-sm mb-3">
               <div class="input-group-prepend">
@@ -78,7 +78,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button id="login" type="submit" class="btn btn-primary">Login</button>
           </div>
         </form>
         </div>
@@ -97,7 +97,7 @@
           <div class="modal-body">
             Join our Community now! #friends
             <!--Register-->
-            <form action="index.php" method="post">
+            <form id="create-form" action="index.php" method="post">
 
           <div class="input-group input-group-sm mb-3">
             <div class="input-group-prepend">
@@ -121,8 +121,9 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Create Account</button>
+            <button id="create" type="submit" class="btn btn-primary">Create Account</button>
           </div>
+        </form>
         </div>
       </div>
     </div>
