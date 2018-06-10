@@ -1,7 +1,8 @@
 window.addEventListener('load', async () => {
   console.log("Seite geladen");
-  getNewUniqueLink();
-  document.getElementById('btnCreate').addEventListener('click' , async (event) => createEntry());
+  //getNewUniqueLink();
+  document.getElementById('btnCreateTan').addEventListener('click' , async (event) => getNewUniqueLink());
+  document.getElementById('btnAbsenden').addEventListener('click' , async (event) => createEntry());
 })
 
 async function getNewUniqueLink() {
@@ -18,7 +19,8 @@ async function getNewUniqueLink() {
 }
 async function createEntry()  {
   event.preventDefault()
-  const formData = new formData(document.getElementById('create-form'));
+  console.log("Absenden gedrueckt!!!!");
+  const formData = new formData(document.getElementById('entry-form'));
 
   try {
     const response = await fetch('php/login.php', {

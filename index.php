@@ -16,16 +16,18 @@
     <?php include('segments/_header.html'); ?>
 
     <div id="content">
-
+      <button id="btnCreateTan" type="button" class="btn btn-info">Erstelle Tan</button>
     </div>
 
     <!-- Zum testen der Daten die ueber die Modals reinkommen -->
     <!-- <?php include('segments/_indexTestLoginVals.php'); ?> -->
 
+
     <?php include('segments/_entryForm.php'); ?>
 
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>
+
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
