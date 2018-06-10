@@ -142,6 +142,235 @@
   </div>
 
 
+  <div class="container">
+    <div class="row">
+      <div class="col">
+           1 of 3
+         </div>
+
+  <div class="col-10">
+  <form id="entry-form" action="index.php" method="post">
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Vorname*</span>
+    </div>
+    <input type="text" class="form-control" name="entryVorname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Nachname*</span>
+    </div>
+    <input type="text" class="form-control" name="entryNachname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Geburtstag</span>
+    </div>
+    <input type="text" class="form-control" name="entryGeburtstag" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Wohnort</span>
+    </div>
+    <input type="text" class="form-control" name="entryOrt" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Straße</span>
+    </div>
+    <input type="text" class="form-control" name="entryStraße" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Woher kennen wir uns?*</span>
+    </div>
+    <input type="text" class="form-control" name="entryKennen" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Festnetz</span>
+    </div>
+    <input type="text" class="form-control" name="entryFestnetz" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Handynummer</span>
+    </div>
+    <input type="text" class="form-control" name="entryHandy" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">E-Mail*</span>
+    </div>
+    <input type="text" class="form-control" name="entryMail" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Hobbys</span>
+    </div>
+    <input type="text" class="form-control" name="entryHobbys" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Berufswunsch</span>
+    </div>
+    <input type="text" class="form-control" name="entryBeruf" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Das könnte ich jeden Tag essen</span>
+    </div>
+    <input type="text" class="form-control" name="entryEssen" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Was ich auf eine Insel mitnehmen würde</span>
+    </div>
+    <input type="text" class="form-control" name="entryInsel" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Lieblingsfilm</span>
+    </div>
+    <input type="text" class="form-control" name="entryFilm" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Lieblingssport</span>
+    </div>
+    <input type="text" class="form-control" name="entrySport" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Coolster Film oder Spielecharaker</span>
+    </div>
+    <input type="text" class="form-control" name="entryCharakter" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Mein Lieblingstier</span>
+    </div>
+    <input type="text" class="form-control" name="entryTier" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Lieblingsmusik(Genre, Interpret, Titel)</span>
+    </div>
+    <input type="text" class="form-control" name="entryMusik" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Geilstes Game</span>
+    </div>
+    <input type="text" class="form-control" name="entryGame" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Lieblings alkoholisches Getränk</span>
+    </div>
+    <input type="text" class="form-control" name="entryAlk" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Meine heftigste Suffstory</span>
+    </div>
+    <input type="text" class="form-control" name="entryStory" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Letzer Absturz</span>
+    </div>
+    <input type="text" class="form-control" name="entryAbsturz" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Lieblings Trinkspiel</span>
+    </div>
+    <input type="text" class="form-control" name="entryTrinkspiel" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">friendsTAN*</span>
+    </div>
+    <input type="text" class="form-control" name="entryTrinkspiel" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="modal-footer">
+  <button id="entry" type="submit" class="btn btn-primary">Login</button>
+  </div>
+
+  </form>
+  </div>
+
+
+  <div class="col">
+       3 of 3
+     </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>
     <!-- Optional JavaScript -->
