@@ -1,7 +1,7 @@
 window.addEventListener('load', async () => {
   console.log("Seite geladen");
   getNewUniqueLink();
-  document.getElementById('create').addEventListener('click' , async (event) => createEntry());
+  document.getElementById('btnCreate').addEventListener('click' , async (event) => createEntry());
 })
 
 async function getNewUniqueLink() {
