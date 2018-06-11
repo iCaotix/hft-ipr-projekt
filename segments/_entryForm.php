@@ -219,7 +219,7 @@ function consumeTan($tanID) {
           <button id="btnAbsenden" type="submit" class="btn btn-primary">Absenden</button>
         </div>
 
-      </fo+rm>
+      </form>
     </div>
   </div>
 </div> <!-- Ende container entry form -->
