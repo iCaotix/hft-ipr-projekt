@@ -44,6 +44,11 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+    <?php include('segments/_entryForm.php'); ?>
+>>>>>>> parent of 268a8ea... switched tan from unique id to index
 
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>

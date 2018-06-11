@@ -1,7 +1,13 @@
 window.addEventListener('load', async () => {
   console.log("Seite geladen");
+<<<<<<< HEAD
   getNewUniqueLink();
   document.getElementById('create').addEventListener('click' , async (event) => createEntry());
+=======
+  //getNewUniqueLink();
+  document.getElementById('btnCreateTan').addEventListener('click' , async (event) => getNewUniqueLink());
+  document.getElementById('btnAbsenden').addEventListener('click' , async (event) => createEntry());
+>>>>>>> parent of 268a8ea... switched tan from unique id to index
 })
 
 async function getNewUniqueLink() {
@@ -18,7 +24,12 @@ async function getNewUniqueLink() {
 }
 async function createEntry()  {
   event.preventDefault()
+<<<<<<< HEAD
   const formData = new formData(document.getElementById('create-form'));
+=======
+  console.log("Absenden gedrueckt!!!!");
+  const formData = new formData(document.getElementById('entry-form'));
+>>>>>>> parent of 268a8ea... switched tan from unique id to index
 
   try {
     const response = await fetch('php/login.php', {
