@@ -1,10 +1,10 @@
 <?php
 
-  if(isset($_POST['tan'])){
+  if(isset($_POST['tanID'])){
     //echo "Tan ->" . $_POST['tan'] . "<-";
-    if($_POST['tan'] != ""){
+    if($_POST['tanID'] != ""){
       addEntry();
-      consumeTan($_POST['tan']);
+      consumeTan($_POST['tanID']);
     }
   }
 
@@ -12,11 +12,11 @@
 
  }
 
-function consumeTan($tan) {
-  require('../dbConnect.php'); //Erstellt variable mit dem namen $database
+function consumeTan($tanID) {
+  require('dbConnect.php'); //Erstellt variable mit dem namen $database
 
   //Stelle sicher dass die Tan noch verfügbar ist.
-  $abfrage = "SELECT `used`, `tan` FROM `tans` WHERE `tan` = '" . $tan . "'";
+  $abfrage = "SELECT `used`, `tan` FROM `tans` WHERE `id` = '" . $tanID . "'";
   $ergebnis = mysqli_query($database, $abfrage);
 
   if($ergebnis->num_rows == 0){
@@ -26,21 +26,16 @@ function consumeTan($tan) {
 
   $resultStr = "";
 
-  while ($row = $ergebnis->fetch_assoc()) {
-    $resultStr = $resultStr . $row["used"] . '  ' . $row["tan"] . '<br>';
-    if($row["used"] == 1){
-      echo "Tan schon verbraucht";
-      return;
-    }
-
+  $row = $ergebnis->fetch_object();
+  if($row->used == 1){
+    echo "Tan schon verbraucht";
+    return;
   }
 
-  //echo $resultStr;
-
   //Setzte Tan auf verbraucht
-  $update = $database->query("UPDATE `tans` SET `used`= true WHERE `tan` = '" . $_POST['tan'] . "'");
+  $update = $database->query("UPDATE `tans` SET `used`= true WHERE `id` = '" . $_POST['tanID'] . "'");
 
-  echo "Tan verbraucht " . $_POST['tan'];
+  echo "Tan verbraucht " . $_POST['tanID'];
 }
 
 ?>
@@ -50,7 +45,7 @@ function consumeTan($tan) {
   <div class="row">
 
     <div class="col-12">
-      <form id="entry-form" action="" method="post">
+      <form id="entry-form" action="index.php" method="post">
         <!-- Vorname-->
         <div class="input-group input-group-sm mb-3">
           <div class="input-group-prepend">
@@ -217,14 +212,14 @@ function consumeTan($tan) {
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Eintrags-TAN*</span>
           </div>
-          <input type="text" class="form-control" name="entryTan" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" name="tanID" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
         </div>
         <!-- Absenden Button-->
         <div class="modal-footer">
           <button id="btnAbsenden" type="submit" class="btn btn-primary">Absenden</button>
         </div>
 
-      </form>
+      </fo+rm>
     </div>
   </div>
 </div> <!-- Ende container entry form -->

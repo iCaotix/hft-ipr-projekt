@@ -13,6 +13,7 @@
 
 
   <body>
+    <!-- Include the header-->
     <?php include('segments/_header.html'); ?>
 
     <div id="content">
@@ -22,7 +23,7 @@
     <!-- Zum testen der Daten die ueber die Modals reinkommen -->
     <!-- <?php include('segments/_indexTestLoginVals.php'); ?> -->
 
-
+    <!-- Include the entryForm-->
     <?php include('segments/_entryForm.php'); ?>
 
     <!-- Include the footer-->

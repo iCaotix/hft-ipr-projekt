@@ -8,22 +8,39 @@
 
   insertTan($uniqueID);
 
+  $resultStr = getTanID($uniqueID);
+
   $HTMLJSON = array('html' => $resultStr);
   echo json_encode($HTMLJSON);
 
   function insertTan($tan) {
     require('../dbConnect.php'); //Erstellt variable mit dem namen $database
 
-    $stmt = $database->prepare("INSERT INTO tans (tan, used) VALUES (?, ?)");
+    $stmt = $database->prepare("INSERT INTO tans (tan, userID, used) VALUES (?, ?, ?)");
 
-    $false = false;
-    $stmt->bind_param("si", $tan, $false);
+    $used = false;
+    $userid = 1;
+    $stmt->bind_param("ssi", $tan, $userid, $used);
 
     try {
       $stmt->execute();
+      $database->close();
     } catch (PDOException $e) {
       $e->getMessage();
     }
+  }
+
+  function getTanID($tan){
+    require('../dbConnect.php'); //Erstellt variable mit dem namen $database
+    $abfrage = "SELECT `id` FROM `tans` WHERE `tan` = '" . $tan . "'";
+
+    $ergebnis = mysqli_query($database, $abfrage);
+
+    $row = $ergebnis->fetch_object();
+    $resultStr = $row->id;
+
+
+    return $resultStr;
   }
 
  ?>
