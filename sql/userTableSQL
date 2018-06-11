@@ -3,6 +3,6 @@ CREATE TABLE `user` (
 	`user` VARCHAR(50) NOT NULL DEFAULT '0',
 	`email` VARCHAR(100) NOT NULL DEFAULT '0',
 	`password` VARCHAR(100) NOT NULL DEFAULT '0',
-	PRIMARY KEY (`ID`),
+	PRIMARY KEY (`ID`)
 	UNIQUE INDEX `user` (`user`)
-);
+)

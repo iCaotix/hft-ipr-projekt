@@ -1,7 +1,7 @@
 window.addEventListener('load', async () => {
   console.log("Seite geladen");
-  //getNewUniqueLink();
-  document.getElementById('btnCreateTan').addEventListener('click' , async (event) => getNewUniqueLink());
+  getNewUniqueLink();
+  document.getElementById('create').addEventListener('click' , async (event) => createEntry());
 })
 
 async function getNewUniqueLink() {
@@ -15,4 +15,19 @@ async function getNewUniqueLink() {
     console.log("Server nicht erreichbar.");
   }
 
+}
+async function createEntry()  {
+  event.preventDefault()
+  const formData = new formData(document.getElementById('create-form'));
+
+  try {
+    const response = await fetch('php/login.php', {
+      method: 'post',
+      body: formData
+    });
+    const jsonData = await response.json();
+
+  } catch (e) {
+    console.log("Fehler");
+  }
 }
