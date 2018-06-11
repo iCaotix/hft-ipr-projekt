@@ -8,50 +8,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
   </head>
+
+
   <body>
+    <!-- Include the header-->
     <?php include('segments/_header.html'); ?>
 
-
-
-
-
-
-
     <div id="content">
-
+      <button id="btnCreateTan" type="button" class="btn btn-info">Erstelle Tan</button>
     </div>
 
-    <div id="phpTest">
-      LoginModalData:
-      Welcome <?php echo $_POST["loginName"]; ?><br>
-      Your Password is: <?php echo $_POST["loginPassword"]; ?><br>
-      <br>
-      RegisterModalData:
-      Welcome <?php echo $_POST["registerName"]; ?><br>
-      Your Password is: <?php echo $_POST["registerPassword"]; ?><br>
-      Your Mail Adress is: <?php echo $_POST["registerMail"]; ?><br>
-    </div>
+    <!-- Zum testen der Daten die ueber die Modals reinkommen -->
+    <!-- <?php include('segments/_indexTestLoginVals.php'); ?> -->
 
-<?php include('segments/_entry.html'); ?>
-
-   <?php echo $_POST["entryVorname"]; ?><br>
-   <?php echo $_POST["entryNachname"]; ?><br>
-   <?php echo $_POST["entryMail"]; ?><br>
-   <?php echo $_POST["entryKennen"]; ?><br>
-   <?php echo $_POST["entryGame"]; ?><br>
-   <?php echo $_POST["entryTrinkspiel"]; ?><br>
-
-
-
-<<<<<<< HEAD
-=======
-
+    <!-- Include the entryForm-->
     <?php include('segments/_entryForm.php'); ?>
->>>>>>> parent of 268a8ea... switched tan from unique id to index
 
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>
+
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

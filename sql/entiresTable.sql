@@ -1,5 +1,5 @@
 CREATE TABLE `kd42696_ipr-projekt`.`entries` (
-  `entryID` INT NOT NULL AUTO_INCREMENT ,
+  `id` INT NOT NULL AUTO_INCREMENT ,
   `userID` INT NOT NULL ,
   `tanID` INT NOT NULL ,
   `vorname` LONGTEXT NOT NULL ,
@@ -25,7 +25,7 @@ CREATE TABLE `kd42696_ipr-projekt`.`entries` (
   `story` LONGTEXT NOT NULL ,
   `absturz` LONGTEXT NOT NULL ,
   `trinkspiel` LONGTEXT NOT NULL ,
-  PRIMARY KEY (`entryID`),
+  PRIMARY KEY (`id`),
   UNIQUE (`userID`),
   UNIQUE (`tanID`)) ENGINE = InnoDB;
 
