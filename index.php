@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   </head>
   <body>
+    <!-- Include the header-->
     <?php include('segments/_header.html'); ?>
 
+<<<<<<< HEAD
 
 
 
@@ -42,11 +44,21 @@
    <?php echo $_POST["entryGame"]; ?><br>
    <?php echo $_POST["entryTrinkspiel"]; ?><br>
 
+=======
+    <div id="content">
+      <button id="btnCreateTan" type="button" class="btn btn-info">Erstelle Tan</button>
+    </div>
+>>>>>>> 268a8ea290224c0d4de615683d4c8529df7d5252
 
+    <!-- Zum testen der Daten die ueber die Modals reinkommen -->
+    <!-- <?php include('segments/_indexTestLoginVals.php'); ?> -->
 
+    <!-- Include the entryForm-->
+    <?php include('segments/_entryForm.php'); ?>
 
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>
+
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
