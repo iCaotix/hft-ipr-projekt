@@ -26,7 +26,6 @@ CREATE TABLE `kd42696_ipr-projekt`.`entries` (
   `absturz` LONGTEXT NOT NULL ,
   `trinkspiel` LONGTEXT NOT NULL ,
   PRIMARY KEY (`id`),
-  UNIQUE (`userID`),
   UNIQUE (`tanID`)) ENGINE = InnoDB;
 
   ALTER TABLE `entries` ADD FOREIGN KEY (`userID`) REFERENCES `user`(`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
