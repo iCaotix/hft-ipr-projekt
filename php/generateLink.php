@@ -1,9 +1,6 @@
 <?php
 
   $uniqueID = uniqid();
-  $resultStr = "Neuer eintrag über: http://localhost/github/ipr-projekt/entry.php?tan=";
-  //Final link
-  //$resultStr = "Neuer eintrag über: http://localhost/friendsbook/entry.php?tan=";
   $resultStr = $resultStr . $uniqueID;
 
   insertTan($uniqueID);

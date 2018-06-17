@@ -9,7 +9,64 @@
   }
 
  function addEntry() {
+  require('dbConnect.php'); //Erstellt variable mit dem namen $database
 
+   $abfrage = "INSERT INTO `entries` (`userID`, `tanID`, `vorname`, `nachname`, `geburtstag`, `wohnort`, `strasse`, `kennenUns`, `festnetz`, `handynummer`, `email`, `hobbies`, `berufswunsch`, `essen`, `insel`, `film`, `sport`, `charakter`, `tier`, `musik`, `game`, `alk`, `story`, `absturz`, `trinkspiel`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+
+    $stmt = $database->prepare($abfrage);
+
+    $userid = getUserID($_POST['tanID']);
+    //$userid = 1;
+    $tanID = $_POST['tanID'];
+
+    $entryVorname = $_POST['entryVorname'];
+    $entryNachname = $_POST['entryNachname'];
+    $entryGeburtstag = $_POST['entryGeburtstag'];
+    $entryOrt = $_POST['entryOrt'];
+    $entryStraße = $_POST['entryStraße'];
+
+    $entryKennen = $_POST['entryKennen'];
+    $entryFestnetz = $_POST['entryFestnetz'];
+    $entryHandy = $_POST['entryHandy'];
+    $entryMail = $_POST['entryMail'];
+    $entryHobbies = $_POST['entryHobbies'];
+
+    $entryBeruf = $_POST['entryBeruf'];
+    $entryEssen = $_POST['entryEssen'];
+    $entryInsel = $_POST['entryInsel'];
+    $entryFilm = $_POST['entryFilm'];
+    $entrySport = $_POST['entrySport'];
+
+    $entryCharakter = $_POST['entryCharakter'];
+    $entryTier = $_POST['entryTier'];
+    $entryMusik = $_POST['entryMusik'];
+    $entryGame = $_POST['entryGame'];
+    $entryAlk = $_POST['entryAlk'];
+
+    $entryStory = $_POST['entryStory'];
+    $entryAbsturz = $_POST['entryAbsturz'];
+    $entryTrinkspiel = $_POST['entryTrinkspiel'];
+
+
+    $stmt->bind_param("sssssssssssssssssssssssss", $userid, $tanID, $entryVorname, $entryNachname, $entryGeburtstag, $entryOrt, $entryStraße, $entryKennen, $entryFestnetz, $entryHandy, $entryMail, $entryHobbies, $entryBeruf, $entryEssen, $entryInsel, $entryFilm, $entrySport, $entryCharakter, $entryTier, $entryMusik, $entryGame, $entryAlk, $entryStory, $entryAbsturz, $entryTrinkspiel );
+    $stmt->execute();
+    $stmt->close();
+
+    echo "Daten eingefuegt!";
+
+ }
+
+ function getUserID($tanID){
+   require('dbConnect.php'); //Erstellt variable mit dem namen $database
+   $abfrage = "SELECT `userID` FROM `tans` WHERE `id` = '" . $tanID . "'";
+
+   $ergebnis = mysqli_query($database, $abfrage);
+
+   $row = $ergebnis->fetch_object();
+   $resultStr = $row->userID;
+
+
+   return $resultStr;
  }
 
 function consumeTan($tanID) {
