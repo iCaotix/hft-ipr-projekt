@@ -33,7 +33,7 @@
     if($p == 'login'){$page = '_login.php';}
     if($p == 'register'){$page = '_register.php';}
 
-    require_once('segments/'.$page)
+    require_once('segments/'.$page);
 
 
      ?>
