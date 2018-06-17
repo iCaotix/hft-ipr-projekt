@@ -10,7 +10,7 @@
 
   $resultStr = getTanID($uniqueID);
 
-  $HTMLJSON = array('html' => $resultStr);
+  $HTMLJSON = array('html' => $resultStr , 'userid' => $_POST['phpSession']);
   echo json_encode($HTMLJSON);
 
   function insertTan($tan) {
@@ -19,7 +19,9 @@
     $stmt = $database->prepare("INSERT INTO tans (tan, userID, used) VALUES (?, ?, ?)");
 
     $used = false;
-    $userid = 1;
+    $userid = $_POST['phpSession'];
+    //$userid = $_SESSION['user'];
+    //$userid = $_POST['userid'];
     $stmt->bind_param("ssi", $tan, $userid, $used);
 
     try {

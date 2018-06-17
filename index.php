@@ -13,6 +13,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+    <script>
+      var PHPSESSIONUSER = '<?php echo $_SESSION['user']; ?>';
+      console.log(PHPSESSIONUSER);
+    </script>
+
   </head>
 
 
@@ -64,6 +69,9 @@
 
     <div id="content">
       <br><span> Session User: <?php echo $_SESSION['user']; ?> </span>
+
+      <br>
+
     </div>
 
     <!-- Include the footer-->

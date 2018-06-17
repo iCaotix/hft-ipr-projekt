@@ -14,7 +14,7 @@ if( (isset($_POST['loginName'])) && isset($_POST['loginPassword'])){
     $object = $result->fetch_object();
     $_SESSION['user'] = $object->id;
     echo "Einloggen erfolgreich";
-    header("refresh:2;");
+    header("refresh:1;");
   } else {
     echo "Einloggen fehlgeschlagen";
   }

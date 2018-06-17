@@ -1,12 +1,18 @@
 window.addEventListener('load', async () => {
   console.log("Seite geladen");
+
   //getNewUniqueLink();
   document.getElementById('btnCreateTan').addEventListener('click' , async (event) => getNewUniqueLink());
 })
 
 async function getNewUniqueLink() {
+  const phpSessionForm = new FormData();
+  phpSessionForm.append("phpSession", PHPSESSIONUSER);
   try {
-    var firstFetch = await fetch('php/generateLink.php');
+    var firstFetch = await fetch('php/generateLink.php', {
+      method: 'post',
+      body: phpSessionForm
+    });
 		var jsonFirstFetch = await firstFetch.json();
 		var content = document.getElementById('content');
 		content.innerHTML = `${jsonFirstFetch.html}`;
@@ -32,3 +38,8 @@ document.getElementById('btnCreate').addEventListener("click" , async (event) =>
     console.log("Abschicken der Daten fehlerhaft!");
   }
 })
+
+function getCookieValue(a) {
+    var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
+}
