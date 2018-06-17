@@ -50,7 +50,7 @@ function consumeTan($tanID) {
       </div>
       <hr />
 
-      <form id="entry-form" action="index.php" method="post">
+      <form id="entry-form" action="index.php?page=newEntry" method="post">
         <!-- Vorname-->
         <div class="input-group input-group-sm mb-3">
           <div class="input-group-prepend">

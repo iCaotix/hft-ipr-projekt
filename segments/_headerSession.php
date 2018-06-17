@@ -1,3 +1,5 @@
+
+
 <div>
   <div id="carouselExampleSlidesOnly" class="carousel slide"  data-ride="carousel">
     <div class="carousel-inner" style="height: 100px;">
@@ -36,7 +38,11 @@
     <form class="form-inline my-2 my-lg-0">
       <div class="btn-group" role="group" aria-label="Basic example">
         <!-- Button Logout -->
-        <button type="button" class="btn btn-secondary">Logout</button>
+        <!-- <button id="btnLogout" onclick=window.location.href = 'http://www.google.com' type="button" class="btn btn-secondary">Logout</button> -->
+
+        <form action="" method="post">
+          <input class="btn btn-secondary" onClick="window.location.href = 'php/logout.php'" type="button" value="Logout"></input>
+        </form>
       </div>
     </form>
   </div>
