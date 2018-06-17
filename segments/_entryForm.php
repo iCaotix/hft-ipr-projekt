@@ -52,7 +52,7 @@
     $stmt->execute();
     $stmt->close();
 
-    echo "Daten eingefuegt!";
+    echo "Daten eingefuegt! <br>";
 
  }
 
