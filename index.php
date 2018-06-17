@@ -34,29 +34,10 @@
     if($p == 'register'){$page = '_register.php';}
 
     require_once('segments/'.$page);
-
-
-     ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ?>
 
     <div id="content">
-      <button id="btnCreateTan" type="button" class="btn btn-info">Erstelle Tan</button>
       <br><span> Session User: <?php echo $_SESSION['user']; ?> </span>
-      <button type="button" class="btn btn-info">Logout</button>
-
     </div>
 
     <!-- Zum testen der Daten die ueber die Modals reinkommen -->
