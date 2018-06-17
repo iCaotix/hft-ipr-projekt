@@ -1,7 +1,6 @@
 <?php
 
   $uniqueID = uniqid();
-  $resultStr = $resultStr . $uniqueID;
 
   insertTan($uniqueID);
 
