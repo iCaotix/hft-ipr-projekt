@@ -35,15 +35,8 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <!-- Button Login -->
-        <a class="btn btn-secondary" href="index.php?page=login" role="button">
-          Login
-        </a>
-
-        <!-- Button Register -->
-        <a class="btn btn-secondary" href="index.php?page=register" role="button">
-          Register
-        </a>
+        <!-- Button Logout -->
+        <button type="button" class="btn btn-secondary">Logout</button>
       </div>
     </form>
   </div>

@@ -20,6 +20,37 @@
   <body>
     <!-- Include the header-->
     <?php include('segments/_header.php'); ?>
+    <?php #include('segments/_indexTestLoginVals.php'); ?><!-- For forms testing -->
+
+    <?php
+    $page = '_404.html';
+    $p = '';
+    if(isset($_GET['page'])){$p = $_GET['page'];}
+
+    if($p == '' || $p == 'home'){$page = '_home.html';}
+    if($p == 'newEntry'){$page = '_entryForm.php';}
+    if($p == 'myFriendsBook'){$page = '_myFriendsBook.html';}
+    if($p == 'login'){$page = '_login.php';}
+    if($p == 'register'){$page = '_register.php';}
+
+    require_once('segments/'.$page)
+
+
+     ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="content">
       <button id="btnCreateTan" type="button" class="btn btn-info">Erstelle Tan</button>
@@ -29,10 +60,8 @@
     </div>
 
     <!-- Zum testen der Daten die ueber die Modals reinkommen -->
-    <!-- <?php include('segments/_indexTestLoginVals.php'); ?> -->
 
-    <!-- Include the entryForm-->
-    <?php include('segments/_entryForm.php'); ?>
+
 
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>

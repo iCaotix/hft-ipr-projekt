@@ -39,12 +39,17 @@ function consumeTan($tanID) {
 }
 
 ?>
-
+<p></p>
 <!-- Container fuer entry form-->
 <div class="container">
   <div class="row">
 
     <div class="col-12">
+      <div class="alert alert-dark" role="alert">
+        <h4>Write a new entry for yor friend!</h4>
+      </div>
+      <hr />
+
       <form id="entry-form" action="index.php" method="post">
         <!-- Vorname-->
         <div class="input-group input-group-sm mb-3">
