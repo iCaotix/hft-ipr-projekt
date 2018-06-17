@@ -68,10 +68,12 @@
     ?>
 
     <div id="content">
-      <br><span> Session User: <?php echo $_SESSION['user']; ?> </span>
-
+      <?php
+        if(isset($_SESSION['username'])){
+          echo("<br><span> Herzlich Willkomen " . $_SESSION['username'] . "</span>");
+        }
+      ?>
       <br>
-
     </div>
 
     <!-- Include the footer-->

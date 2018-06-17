@@ -8,7 +8,7 @@
 </div>
 <hr />
 <!--Register-->
-<form id="create-form" action="index.php" method="post">
+<form id="create-form" action="index.php?page=login" method="post">
 
 <div class="input-group input-group-sm mb-3">
 <div class="input-group-prepend">

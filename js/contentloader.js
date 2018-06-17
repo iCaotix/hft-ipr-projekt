@@ -25,6 +25,7 @@ async function getNewUniqueLink() {
 
 //<!--Register-->
 document.getElementById('btnCreate').addEventListener("click" , async (event) => {
+  event.preventDefault();
   const formData = new FormData(document.getElementById('create-form'));
   try {
     const response = await fetch('php/signup.php', {
