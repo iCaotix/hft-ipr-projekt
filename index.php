@@ -27,9 +27,9 @@
     $p = '';
     if(isset($_GET['page'])){$p = $_GET['page'];}
 
-    if($p == '' || $p == 'home'){$page = '_home.html';}
+    if($p == '' || $p == 'home'){$page = '_home.php';}
     if($p == 'newEntry'){$page = '_entryForm.php';}
-    if($p == 'myFriendsBook'){$page = '_myFriendsBook.html';}
+    if($p == 'myFriendsBook'){$page = '_myFriendsBook.php';}
     if($p == 'login'){$page = '_login.php';}
     if($p == 'register'){$page = '_register.php';}
 
