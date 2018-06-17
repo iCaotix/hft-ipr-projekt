@@ -49,6 +49,8 @@
   </div>
 </nav>
 <!-- Modal login-->
+<?php require("php/signin.php") ?>
+
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -118,7 +120,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-sm">EmailAdress</span>
         </div>
-        <input type="password" class="form-control" name="registerMail" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        <input type="text" class="form-control" name="registerMail" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
       </div>
         ╭∩╮(ಠ۝ಠ)╭∩╮
       </div>

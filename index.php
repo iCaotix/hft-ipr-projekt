@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+  if(!isset($_SESSION)){
+    session_start();
+  }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,10 +19,13 @@
 
   <body>
     <!-- Include the header-->
-    <?php include('segments/_header.html'); ?>
+    <?php include('segments/_header.php'); ?>
 
     <div id="content">
       <button id="btnCreateTan" type="button" class="btn btn-info">Erstelle Tan</button>
+      <br><span> Session User: <?php echo $_SESSION['user']; ?> </span>
+      <button type="button" class="btn btn-info">Logout</button>
+
     </div>
 
     <!-- Zum testen der Daten die ueber die Modals reinkommen -->
