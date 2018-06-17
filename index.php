@@ -1,7 +1,6 @@
 <?php
-  if(!isset($_SESSION)){
-    session_start();
-  }
+  session_start();
+  require('dbConnect.php');
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,7 +18,16 @@
 
   <body>
     <!-- Include the header-->
-    <?php include('segments/_header.php'); ?>
+
+    <?php
+    if(isset($_SESSION['user'])){
+      include('segments/_headerSession.php');
+    } else {
+      include('segments/_header.php');
+    }
+
+
+    ?>
     <?php #include('segments/_indexTestLoginVals.php'); ?><!-- For forms testing -->
 
     <?php
@@ -27,14 +35,41 @@
     $p = '';
     if(isset($_GET['page'])){$p = $_GET['page'];}
 
-    if($p == '' || $p == 'home'){$page = '_home.php';}
-    if($p == 'newEntry'){$page = '_entryForm.php';}
-    if($p == 'myFriendsBook'){$page = '_myFriendsBook.php';}
-    if($p == 'login'){$page = '_login.php';}
-    if($p == 'register'){$page = '_register.php';}
+    if($p == '' || $p == 'home'){
+      $page = '_home.php';
+    }
 
-    require_once('segments/'.$page);
+    if($p == 'newEntry'){
+      $page = '_entryForm.php';
+    }
+
+    if($p == 'myFriendsBook'){
+      $page = '_myFriendsBook.php';
+    }
+
+    if($p == 'login'){
+      if(isset($_SESSION['user'])){
+        header('Location: index.php');
+      } else {
+        $page = '_login.php';
+      }
+    }
+
+    if($p == 'register'){
+      $page = '_register.php';
+    }
+
+    require('segments/'.$page);
+
     ?>
+
+
+
+
+
+
+
+
 
     <div id="content">
       <br><span> Session User: <?php echo $_SESSION['user']; ?> </span>

@@ -45,4 +45,3 @@
     </form>
   </div>
 </nav>
-<?php require("php/signin.php") ?>
