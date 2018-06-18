@@ -24,7 +24,7 @@ async function getNewUniqueLink() {
 }
 
 //<!--Register-->
-document.getElementById('btnCreate').addEventListener("click" , async (event) => {
+document.getElementById('create-form').addEventListener("submit" , async (event) => {
   event.preventDefault();
   const formData = new FormData(document.getElementById('create-form'));
   try {

@@ -29,8 +29,8 @@
 <input type="text" class="form-control" name="registerMail" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
 </div>
 <hr />
-╭∩╮(ಠ۝ಠ)╭∩╮
 <button id="btnCreate" type="submit" style="float: right;" class="btn btn-primary">Create Account</button>
+</form>
 </div>
 </div>
 </div> <!-- Ende container login -->
