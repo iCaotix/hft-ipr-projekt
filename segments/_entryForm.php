@@ -3,7 +3,6 @@
   if(isset($_POST['tanID'])){
     //echo "Tan ->" . $_POST['tan'] . "<-";
     if($_POST['tanID'] != ""){
-      addEntry();
       consumeTan($_POST['tanID']);
     }
   }
@@ -52,7 +51,7 @@
     $stmt->execute();
     $stmt->close();
 
-    echo "Daten eingefuegt! <br>";
+    echo '<script> alert("Daten eingefuegt!"); </script>';
 
  }
 
@@ -93,6 +92,7 @@ function consumeTan($tanID) {
   $update = $database->query("UPDATE `tans` SET `used`= true WHERE `id` = '" . $_POST['tanID'] . "'");
 
   echo "Tan verbraucht " . $_POST['tanID'];
+  addEntry();
 }
 
 ?>
