@@ -6,7 +6,8 @@
         <h4>Take a look in your FriendsBook!</h4>
         <hr />
         <button id="btnCreateTan" type="button" style="float: right;"class="btn btn-info">Erstelle Tan</button>
-        <h5>Want more entrys? go and invite your friends with the friendsTAN</h5><div id="genTan">Das ist deine neue friendsTAN: 100</div>
+        <h5>Want more entrys? go and invite your friends with the friendsTAN</h5>
+        <div id="genTan"></div>
       </div>
 
       <div class="card-columns">

@@ -14,8 +14,8 @@ async function getNewUniqueLink() {
       body: phpSessionForm
     });
 		var jsonFirstFetch = await firstFetch.json();
-		var content = document.getElementById('content');
-		content.innerHTML = `${jsonFirstFetch.html}`;
+		var genTan = document.getElementById('genTan');
+		genTan.innerHTML = "Das ist deine neue friendsTAN: " + `${jsonFirstFetch.html}`;
 
   } catch (e) {
     console.log("Server nicht erreichbar.");
