@@ -103,7 +103,7 @@ function consumeTan($tanID) {
 
     <div class="col-12">
       <div class="alert alert-dark" role="alert">
-        <h4>Write a new entry for yor friend!</h4>
+        <h4>Write a new entry for your friend!</h4>
       </div>
       <hr />
 
