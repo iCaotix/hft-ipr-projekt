@@ -11,6 +11,7 @@ $uID = $_SESSION['user'];
         <hr />
         <button id="btnCreateTan" type="button" style="float: right;"class="btn btn-info">Erstelle Tan</button>
         <h5>Want more entrys? go and invite your friends with the friendsTAN</h5>
+        <div id="genTan"></div>
       </div>
 
       <div class="card-columns">
