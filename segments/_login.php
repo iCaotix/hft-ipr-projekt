@@ -37,13 +37,13 @@ if( (isset($_POST['loginName'])) && isset($_POST['loginPassword'])){
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
           </div>
-          <input type="text" class="form-control" name="loginName" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" name="loginName" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
           </div>
-          <input type="password" class="form-control" name="loginPassword" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="password" class="form-control" name="loginPassword" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
         </div>
         <hr />
         <button id="btnLogin" type="submit" style="float: right;" class="btn btn-primary">Login</button>

@@ -113,14 +113,14 @@ function consumeTan($tanID) {
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Vorname*</span>
           </div>
-          <input type="text" class="form-control" name="entryVorname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" name="entryVorname" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
         </div>
         <!-- Nachname-->
         <div class="input-group input-group-sm mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Nachname*</span>
           </div>
-          <input type="text" class="form-control" name="entryNachname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" name="entryNachname" aria-label="Small" aria-describedby="inputGroup-sizing-sm"required>
         </div>
         <!-- Geburtstag-->
         <div class="input-group input-group-sm mb-3">
@@ -148,7 +148,7 @@ function consumeTan($tanID) {
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Woher kennen wir uns?*</span>
           </div>
-          <input type="text" class="form-control" name="entryKennen" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" name="entryKennen" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
         </div>
         <!-- Festnetz-->
         <div class="input-group input-group-sm mb-3">
@@ -274,7 +274,7 @@ function consumeTan($tanID) {
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Eintrags-TAN*</span>
           </div>
-          <input type="text" class="form-control" name="tanID" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" name="tanID" aria-label="Small" aria-describedby="inputGroup-sizing-sm"required>
         </div>
         <!-- Absenden Button-->
         <div class="modal-footer">

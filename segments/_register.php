@@ -14,19 +14,19 @@
 <div class="input-group-prepend">
   <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
 </div>
-<input type="text" class="form-control"  name="registerName" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+<input type="text" class="form-control"  name="registerName" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
 </div>
 <div class="input-group input-group-sm mb-3">
 <div class="input-group-prepend">
   <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
 </div>
-<input type="password" class="form-control" name="registerPassword" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+<input type="password" class="form-control" name="registerPassword" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
 </div>
 <div class="input-group input-group-sm mb-3">
 <div class="input-group-prepend">
   <span class="input-group-text" id="inputGroup-sizing-sm">EmailAdress</span>
 </div>
-<input type="text" class="form-control" name="registerMail" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+<input type="text" class="form-control" name="registerMail" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
 </div>
 <hr />
 ╭∩╮(ಠ۝ಠ)╭∩╮
