@@ -15,7 +15,8 @@ if( (isset($_POST['loginName'])) && isset($_POST['loginPassword'])){
     $_SESSION['user'] = $object->id;
     $_SESSION['username'] = $object->username;
     echo "Einloggen erfolgreich <br> Willkommen " . $_SESSION['username'];
-    header("refresh:1;");
+    //header("refresh:1;");
+    header('Location: index.php?page=myFriendsBook');
   } else {
     echo "Einloggen fehlgeschlagen";
   }

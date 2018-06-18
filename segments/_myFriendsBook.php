@@ -40,13 +40,13 @@
           echo'<p class="card-text">Festnetz: ' . $row['festnetz'] . '</p>';
         }
         if(!empty($row['handynummer'])){
-          echo'<p class="card-text">Handynummer:'  . $row['handynummer'] . '</p>';
+          echo'<p class="card-text">Handynummer: '  . $row['handynummer'] . '</p>';
         }
         if(!empty($row['email'])){
           echo'<p class="card-text">E-Mail: '  . $row['email'] . '</p>';
         }
         if(!empty($row['hobbies'])){
-          echo'<p class="card-text">Hobbies:' . $row['hobbies'] . ' </p>';
+          echo'<p class="card-text">Hobbies: ' . $row['hobbies'] . ' </p>';
         }
         if(!empty($row['berufswunsch'])){
           echo'<p class="card-text">Berufswunsch: ' . $row['berufswunsch'] . '</p>';
@@ -70,7 +70,7 @@
           echo'<p class="card-text">Mein Lieblingstier: ' . $row['tier'] . '</p>';
         }
         if(!empty($row['musik'])){
-          echo'<p class="card-text">Lieblingsmusik:' . $row['musik'] . '</p>';
+          echo'<p class="card-text">Lieblingsmusik: ' . $row['musik'] . '</p>';
         }
         if(!empty($row['game'])){
           echo'<p class="card-text">Geilstes Game: ' . $row['game'] . '</p>';
