@@ -34,6 +34,7 @@ document.getElementById('create-form').addEventListener("submit" , async (event)
     });
     const jsonData = await response.json();
     console.log(jsonData);
+    alert(jsonData);
 
   } catch (e) {
     console.log("Abschicken der Daten fehlerhaft!");
