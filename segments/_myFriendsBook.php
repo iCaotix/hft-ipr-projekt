@@ -24,67 +24,67 @@
         echo'<div class="card">';
         echo'<div class="card-body">';
         echo'<h5 class="card-title">' . $row['vorname'] . ' ' . $row['nachname'] . '</h5>';
-        if(!empty($row['geburtstag'])){
+        if(!empty(trim($row['geburtstag']))){
             echo'<p class="card-text">Geburtstag: ' . $row['geburtstag'] . '</p>';
         }
-        if(!empty($row['wohnort'])){
+        if(!empty(trim($row['wohnort']))){
           echo'<p class="card-text">Wohnort: ' . $row['wohnort'] . '</p>';
         }
-        if(!empty($row['strasse'])){
+        if(!empty(trim($row['strasse']))){
           echo'<p class="card-text">Straße: ' . $row['strasse'] . '</p>';
         }
-        if(!empty($row['kennenUns'])){
+        if(!empty(trim($row['kennenUns']))){
           echo'<p class="card-text">Woher kennen wir uns? ' . $row['kennenUns'] . '</p>';
         }
-        if(!empty($row['festnetz'])){
+        if(!empty(trim($row['festnetz']))){
           echo'<p class="card-text">Festnetz: ' . $row['festnetz'] . '</p>';
         }
-        if(!empty($row['handynummer'])){
+        if(!empty(trim($row['handynummer']))){
           echo'<p class="card-text">Handynummer: '  . $row['handynummer'] . '</p>';
         }
-        if(!empty($row['email'])){
+        if(!empty(trim($row['email']))){
           echo'<p class="card-text">E-Mail: '  . $row['email'] . '</p>';
         }
-        if(!empty($row['hobbies'])){
+        if(!empty(trim($row['hobbies']))){
           echo'<p class="card-text">Hobbies: ' . $row['hobbies'] . ' </p>';
         }
-        if(!empty($row['berufswunsch'])){
+        if(!empty(trim($row['berufswunsch']))){
           echo'<p class="card-text">Berufswunsch: ' . $row['berufswunsch'] . '</p>';
         }
-        if(!empty($row['essen'])){
+        if(!empty(trim($row['essen']))){
           echo'<p class="card-text">Das könnte ich jeden Tag essen: ' . $row['essen'] . '</p>';
         }
-        if(!empty($row['insel'])){
+        if(!empty(trim($row['insel']))){
           echo'<p class="card-text">Was ich auf eine Insel mitnehmen würde: ' . $row['insel'] . '</p>';
         }
-        if(!empty($row['film'])){
+        if(!empty(trim($row['film']))){
           echo'<p class="card-text">Lieblingsfilm: ' . $row['film'] . '</p>';
         }
-        if(!empty($row['sport'])){
+        if(!empty(trim($row['sport']))){
           echo'<p class="card-text">Lieblingssport: ' . $row['sport'] . '</p>';
         }
-        if(!empty($row['charakter'])){
+        if(!empty(trim($row['charakter']))){
           echo'<p class="card-text">Coolster Film oder Spielecharakter: ' . $row['charakter'] . '</p>';
         }
-        if(!empty($row['tier'])){
+        if(!empty(trim($row['tier']))){
           echo'<p class="card-text">Mein Lieblingstier: ' . $row['tier'] . '</p>';
         }
-        if(!empty($row['musik'])){
+        if(!empty(trim($row['musik']))){
           echo'<p class="card-text">Lieblingsmusik: ' . $row['musik'] . '</p>';
         }
-        if(!empty($row['game'])){
+        if(!empty(trim($row['game']))){
           echo'<p class="card-text">Geilstes Game: ' . $row['game'] . '</p>';
         }
-        if(!empty($row['story'])){
+        if(!empty(trim($row['alk']))){
           echo'<p class="card-text">Lieblings alkoholisches Getränk: ' . $row['alk'] . '</p>';
         }
-        if(!empty($row['geburtstag'])){
+        if(!empty(trim($row['story']))){
           echo'<p class="card-text">Meine heftigeste Suffstory: ' . $row['story'] . '</p>';
         }
-        if(!empty($row['absturz'])){
+        if(!empty(trim($row['absturz']))){
           echo'<p class="card-text">Letzter Absturz: ' . $row['absturz'] . '</p>';
         }
-        if(!empty($row['trinkspiel'])){
+        if(!empty(trim($row['trinkspiel']))){
           echo'<p class="card-text">Lieblings Trinkspiel: ' . $row['trinkspiel'] . '</p>';
         }
 
