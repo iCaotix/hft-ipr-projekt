@@ -6,7 +6,7 @@
   $pswd = ($_POST['registerPassword']);
   $email = ($_POST['registerMail']);
 
-  if ($name != " " && $pswd != " " && $email != " ") {
+  if (!empty(trim($name)) && !empty(trim($pswd)) && !empty(trim($email))) {
     $search_user = $database->prepare("SELECT ID FROM user WHERE username='$name '");
     $search_user->execute();
     $search_result = $search_user->get_result();
@@ -22,7 +22,7 @@
       echo json_encode("Der Benutzername ist leider schon vergeben!");
     }
   } else {
-    echo json_encode("Erstes Zeichen darf kein Leerzeichen sein!");
+    echo json_encode("Es dürfen nicht nur Leerzeichen eingegeben werden!");
   }
 
  ?>
