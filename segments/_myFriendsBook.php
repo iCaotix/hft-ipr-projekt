@@ -7,6 +7,20 @@
         <hr />
         <button id="btnCreateTan" type="button" style="float: right;"class="btn btn-info">Erstelle Tan</button>
         <h5>Want more entrys? Go and invite your friends with the friendsTAN</h5>
+        <br>
+        <div class="alert alert-dark" role="alert">
+        <h5>Deine unbenutzen Tans:</h5>
+          <?php
+            $uID = 0;
+            $uID = $_SESSION['user'];
+            $stmt = $database->prepare("SELECT id FROM tans WHERE userID = '$uID' AND `used` = false ");
+            $stmt->execute();
+            $result = $stmt->get_result();
+            while ($object = $result->fetch_object()) {
+              echo $object->id . " | ";
+            }
+          ?>
+        </div>
         <div id="genTan"></div>
       </div>
 
