@@ -16,6 +16,18 @@
     <!-- ccs stylesheet for Particles.js -->
     <link rel="stylesheet" media="screen" href="css/style.css">
 
+    <style type="text/css">
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
+      }
+    </style>
+
     <script>
       var PHPSESSIONUSER = '<?php echo $_SESSION['user']; ?>';
       console.log(PHPSESSIONUSER);
@@ -46,44 +58,40 @@
     <?php #include('segments/_indexTestLoginVals.php'); ?><!-- For forms testing -->
 
     <!-- Welche seite soll geladen werden-->
-    <?php
-      $page = '_404.html';
-      $p = '';
-      if(isset($_GET['page'])){$p = $_GET['page'];}
+    <main role="main">
+      <?php
+        $page = '_404.html';
+        $p = '';
+        if(isset($_GET['page'])){$p = $_GET['page'];}
 
-      if($p == '' || $p == 'home'){
-        $page = '_home.php';
-      }
-
-      if($p == 'newEntry'){
-        $page = '_entryForm.php';
-      }
-
-      if($p == 'myFriendsBook'){
-        $page = '_myFriendsBook.php';
-      }
-
-      if($p == 'login'){
-        if(isset($_SESSION['user'])){
-          header('Location: index.php');
-        } else {
-          $page = '_login.php';
+        if($p == '' || $p == 'home'){
+          $page = '_home.php';
         }
-      }
 
-      if($p == 'register'){
-        $page = '_register.php';
-      }
+        if($p == 'newEntry'){
+          $page = '_entryForm.php';
+        }
 
-      require('segments/'.$page);
+        if($p == 'myFriendsBook'){
+          $page = '_myFriendsBook.php';
+        }
 
-    ?>
-    <div id="footer">
-        <div id="content">
-          
-          <br>
-        </div>
-    </div>
+        if($p == 'login'){
+          if(isset($_SESSION['user'])){
+            header('Location: index.php');
+          } else {
+            $page = '_login.php';
+          }
+        }
+
+        if($p == 'register'){
+          $page = '_register.php';
+        }
+
+        require('segments/'.$page);
+
+      ?>
+    </main>
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>
 
