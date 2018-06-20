@@ -16,18 +16,6 @@
     <!-- ccs stylesheet for Particles.js -->
     <link rel="stylesheet" media="screen" href="css/style.css">
 
-    <style type="text/css">
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        /* Set the fixed height of the footer here */
-        height: 60px;
-        line-height: 60px; /* Vertically center the text there */
-        background-color: #f5f5f5;
-      }
-    </style>
-
     <script>
       var PHPSESSIONUSER = '<?php echo $_SESSION['user']; ?>';
       console.log(PHPSESSIONUSER);
@@ -40,11 +28,12 @@
         <!-- particles.js container -->
         <div id="particles-js"></div>
 
-        <!-- count particles -->
-        <div class="count-particles">
-          <span class="js-count-particles">--</span> particles
-        </div>
-
+        <!-- count particles  -->
+        <!--
+          <div class="count-particles">
+            <span class="js-count-particles">-</span> particles
+          </div>
+        -->
 
     <!-- Include the header-->
     <?php
