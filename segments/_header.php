@@ -23,10 +23,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li id="navItemHome" class="nav-item">
         <a class="nav-link" href="index.php?page=home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li id="navItemEntry" class="nav-item">
         <a class="nav-link" href="index.php?page=newEntry">New Entry</a>
       </li>
     </ul>

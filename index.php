@@ -23,7 +23,6 @@
 
   </head>
 
-
   <body>
     <!-- PARTICLES JS -->
         <!-- particles.js container -->
@@ -45,9 +44,6 @@
     ?>
 
     <?php #include('segments/_indexTestLoginVals.php'); ?><!-- For forms testing -->
-
-
-
 
     <!-- Welche seite soll geladen werden-->
     <?php
@@ -82,16 +78,12 @@
       require('segments/'.$page);
 
     ?>
-<div id="footer">
-    <div id="content">
-      <?php
-        if(isset($_SESSION['username'])){
-          echo("<br><span> Herzlich Willkomen " . $_SESSION['username'] . "</span>");
-        }
-      ?>
-      <br>
+    <div id="footer">
+        <div id="content">
+          
+          <br>
+        </div>
     </div>
-</div>
     <!-- Include the footer-->
     <?php include('segments/_footer.html'); ?>
 

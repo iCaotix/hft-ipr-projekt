@@ -25,13 +25,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li id="navItemHome" class="nav-item">
         <a class="nav-link" href="index.php?page=home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li id="navItemEntry" class="nav-item">
         <a class="nav-link" href="index.php?page=newEntry">New Entry</a>
       </li>
-      <li class="nav-item">
+      <li id="navItemDashboard" class="nav-item">
         <a class="nav-link" href="index.php?page=myFriendsBook">My FriendsBook</a>
       </li>
     </ul>
@@ -40,8 +40,15 @@
         <!-- Button Logout -->
         <!-- <button id="btnLogout" onclick=window.location.href = 'http://www.google.com' type="button" class="btn btn-secondary">Logout</button> -->
 
+
         <form action="" method="post">
+          <?php
+            if(isset($_SESSION['username'])){
+              echo('<input class="btn btn-primary" type="button" value="Herzlich Willkommen ' . $_SESSION['username'] . '"></input>');
+            }
+          ?>
           <input class="btn btn-secondary" onClick="window.location.href = 'php/logout.php'" type="button" value="Logout"></input>
+
         </form>
       </div>
     </form>

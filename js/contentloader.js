@@ -2,7 +2,9 @@ window.addEventListener('load', async () => {
   console.log("Seite geladen");
 
   //getNewUniqueLink();
+  setActiveNav();
   document.getElementById('btnCreateTan').addEventListener('click' , async (event) => getNewUniqueLink());
+
 })
 
 async function getNewUniqueLink() {
@@ -44,4 +46,20 @@ document.getElementById('create-form').addEventListener("submit" , async (event)
 function getCookieValue(a) {
     var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
     return b ? b.pop() : '';
+}
+
+function setActiveNav(){
+  if(window.location.href.indexOf("?") >= 0){
+    if(window.location.href.indexOf("page=home") >= 0){
+      $("#navItemHome").addClass('active');
+    } else if (window.location.href.indexOf("page=newEntry") >= 0){
+      $("#navItemEntry").addClass('active');
+    } else if (window.location.href.indexOf("page=myFriendsBook") >= 0){
+      $("#navItemDashboard").addClass('active');
+    } else if (window.location.href.indexOf("page=newEntry") >= 0){
+      $("#navItemEntry").addClass('active');
+    }
+  } else {
+    $("#navItemHome").addClass('active');
+  }
 }
