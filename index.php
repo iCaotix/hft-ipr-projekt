@@ -29,11 +29,9 @@
         <div id="particles-js"></div>
 
         <!-- count particles  -->
-        <!--
           <div class="count-particles">
             <span class="js-count-particles">-</span> particles
           </div>
-        -->
 
     <!-- Include the header-->
     <?php

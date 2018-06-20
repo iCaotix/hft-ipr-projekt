@@ -67,6 +67,7 @@ canvas{
 
 #stats,
 .count-particles{
+  z-index: -10000;
   -webkit-user-select: none;
   margin-bottom: 5px;
   margin-right: 5px;
