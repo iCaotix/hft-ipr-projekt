@@ -44,10 +44,10 @@
         <form action="" method="post">
           <?php
             if(isset($_SESSION['username'])){
-              echo('<input class="btn btn-primary" type="button" value="Herzlich Willkommen ' . $_SESSION['username'] . '"></input>');
+              echo('<input class="btn btn-secondary" type="button" value="Herzlich Willkommen ' . $_SESSION['username'] . '"></input>');
             }
           ?>
-          <input class="btn btn-secondary" onClick="window.location.href = 'php/logout.php'" type="button" value="Logout"></input>
+          <input class="btn btn-danger" onClick="window.location.href = 'php/logout.php'" type="button" value="Logout"></input>
 
         </form>
       </div>
