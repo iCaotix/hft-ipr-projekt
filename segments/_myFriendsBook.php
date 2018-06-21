@@ -5,11 +5,11 @@
       <div class="alert alert-dark" role="alert">
         <h4>Take a look in your FriendsBook!</h4>
         <hr />
-        <button id="btnCreateTan" type="button" style="float: right;"class="btn btn-info">Erstelle Tan</button>
-        <h5>Want more entrys? Go and invite your friends with the friendsTAN</h5>
+        <button id="btnCreateTan" type="button" style="float: right;"class="btn btn-info">Create Tan</button>
+        <h5>Want more entries? Go and invite your friends with the friendsTAN</h5>
         <br>
         <div class="alert alert-dark" role="alert">
-        <h5>Deine unbenutzen Tans:</h5>
+        <h5>Your unused Tans:</h5>
           <?php
             $uID = 0;
             $uID = $_SESSION['user'];

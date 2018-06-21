@@ -6,7 +6,7 @@
         <div class="card bg-success text-white">
           <div class="card-body">
             <h5 class="card-title">Hello and welcome on FriendsBook</h5>
-            <p class="card-text">You can write entys for your friends on the New Entry Page or create your own FriendsBook account to get your own entrys written by your frieds.</p>
+            <p class="card-text">You can write entries for your friends on the New Entry Page or create your own FriendsBook account to get your own entries written by your friends.</p>
           </div>
         </div>
         <div class="card p-3">
@@ -23,13 +23,13 @@
           <div class="card-body">
             <h5 class="card-title">Patch notes</h5>
             <p class="card-text">In this patch we implemented a nicer coloring of the pages, also some important bug fixes are done.</p>
-            <p class="card-text">Please report all bugs and problems to our support mail adress: example-mail@support-friendsbook.com</p>
+            <p class="card-text">Please report all bugs and problems to our support mail adress: support@friendsbook.de</p>
             <p class="card-text"><small class="text-muted">Last updated 20.06.2018</small></p>
           </div>
         </div>
         <div class="card bg-dark text-white text-center p-3">
           <blockquote class="blockquote mb-0">
-            <p>"I choose a lazy person to do a hard job. Because a lazy person will find a easy way to do it."</p>
+            <p>"I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it."</p>
             <footer class="blockquote-footer">
               <small>
                 Bill Gates
@@ -40,13 +40,13 @@
         <div class="card text-center bg-primary text-white">
           <div class="card-body">
             <h5 class="card-title">How to create a friendsTAN?</h5>
-            <p class="card-text">To create your friendsTAN just logg into your account and go to the My FriendsBook page, there you will find a create TAN button on the top of the page, you can also see your unused TANs there.</p>
+            <p class="card-text">To create your friendsTAN just log in to your account and go to the MyFriendsBook page, there you will find a create TAN button on the top of the page, you can also see your unused TANs there.</p>
             <p class="card-text"><small class="text-white">FriendsBook</small></p>
           </div>
         </div>
         <div class="card bg-dark text-white text-center p-3">
           <blockquote class="blockquote mb-0">
-            <p class="card-text">"Everybodey should learn to programm a computer... because it teaches you how to think."</p>
+            <p class="card-text">"Everybody should learn to program a computer because it teaches you how to think."</p>
             <footer class="blockquote-footer">
               <small>
                 Steve Jobs
@@ -75,8 +75,8 @@
         </div>
         <div class="card bg-primary text-white text-center">
           <div class="card-body">
-            <h5 class="card-title">How to write a new enntry?</h5>
-            <p class="card-text">To write a new enty for your friend you can go to the New Entry page, there you have to fill in all informations wich are marked. In the last field fill in the friendsTAN, please check twice that its correct, otherwise the entry is lost.</p>
+            <h5 class="card-title">How to write a new entry?</h5>
+            <p class="card-text">To write a new entry for your friend you can go to the New Entry page, there you have to fill in all informations which are starred. In the last field fill in the friendsTAN, please check twice that its correct, otherwise the entry is set.</p>
             <p class="card-text"><small class="text-white">FriendsBook</small></p>
           </div>
         </div>
