@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-12">
       <div class="alert alert-dark" role="alert">
-        <h4>Take a look in your FriendsBook!</h4>
+        <h4>Take a look at your FriendsBook!</h4>
         <hr />
         <button id="btnCreateTan" type="button" style="float: right;"class="btn btn-info">Create Tan</button>
         <h5>Want more entries? Go and invite your friends with the friendsTAN</h5>
