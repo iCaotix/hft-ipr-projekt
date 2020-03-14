@@ -1,2 +1,1 @@
-
-dbConnect.php
+sql/db-data/**/*

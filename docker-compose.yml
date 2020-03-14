@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  db:
+    build:
+      context: ./sql
+    ports:
+      - "5455:3306"
+    volumes:
+      - "./sql/db-data:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: "Test"
+
+  webserver:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    volumes:
+      - "./frontend:/var/www/html"
+    depends_on:
+      - db
+
+# docker run -d -p 5455:3306 -v `pwd`/setup:/docker-entrypoint-initdb.d/ -v `pwd`/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Test mariadb
+# docker run -d -p 80:80 --name my-apache-php-app -v `pwd`:/var/www/html php:7.0-apache
