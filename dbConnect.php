@@ -1,12 +1,12 @@
-<?php 
+<?php
 
 //Create DB connection.
 //This creates a usable "database" - Variable as mysqli Objekt
 //simply remove the "~" in front of the filename
-$user = 'user';
-$password = 'password';
-$db = 'database name';
-$host = 'ip or domain';
+$user = 'root';
+$password = 'Test';
+$db = 'kd42696_ipr-projekt';
+$host = 'db';
 $port = 3306;
 
 $database = new mysqli($host, $user, $password, $db, $port);
