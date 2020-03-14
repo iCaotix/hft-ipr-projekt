@@ -2,10 +2,9 @@
 
 //Create DB connection.
 //This creates a usable "database" - Variable as mysqli Objekt
-//simply remove the "~" in front of the filename
 $user = 'root';
 $password = 'Test';
-$db = 'kd42696_ipr-projekt';
+$db = 'friendsbook';
 $host = 'db';
 $port = 3306;
 

@@ -1,65 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 4.9.0.1
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3306
--- Erstellungszeit: 10. Nov 2019 um 18:32
--- Server-Version: 10.0.38-MariaDB-0+deb8u1
--- PHP-Version: 7.1.14
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
+USE `friendsbook`;
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
-CREATE DATABASE `kd42696_ipr-projekt`;
-
-USE `kd42696_ipr-projekt`;
-
---
--- Datenbank: `kd42696_ipr-projekt`
---
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `entries`
---
-
-CREATE TABLE `entries` (
-  `id` int(11) NOT NULL,
-  `userID` int(11) NOT NULL,
-  `tanID` int(11) NOT NULL,
-  `vorname` longtext CHARACTER SET utf8 NOT NULL,
-  `nachname` longtext CHARACTER SET utf8 NOT NULL,
-  `geburtstag` longtext CHARACTER SET utf8,
-  `wohnort` longtext CHARACTER SET utf8,
-  `strasse` longtext CHARACTER SET utf8,
-  `kennenUns` longtext CHARACTER SET utf8 NOT NULL,
-  `festnetz` longtext CHARACTER SET utf8,
-  `handynummer` longtext CHARACTER SET utf8,
-  `email` longtext CHARACTER SET utf8 NOT NULL,
-  `hobbies` longtext CHARACTER SET utf8,
-  `berufswunsch` longtext CHARACTER SET utf8,
-  `essen` longtext CHARACTER SET utf8,
-  `insel` longtext CHARACTER SET utf8,
-  `film` longtext CHARACTER SET utf8,
-  `sport` longtext CHARACTER SET utf8,
-  `charakter` longtext CHARACTER SET utf8,
-  `tier` longtext CHARACTER SET utf8,
-  `musik` longtext CHARACTER SET utf8,
-  `game` longtext CHARACTER SET utf8,
-  `alk` longtext CHARACTER SET utf8,
-  `story` longtext CHARACTER SET utf8,
-  `absturz` longtext CHARACTER SET utf8,
-  `trinkspiel` longtext CHARACTER SET utf8
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+SET FOREIGN_KEY_CHECKS=0;
 
 --
 -- Daten für Tabelle `entries`
@@ -89,22 +31,10 @@ INSERT INTO `entries` (`id`, `userID`, `tanID`, `vorname`, `nachname`, `geburtst
 (26, 2, 67, 'asd', 'asd', '', '', '', '<div class=\"alert alert-dark\" role=\"alert\">         <h5>Deine unbenutzen Tans:</h5>           67 | 68 | 69 | 70 | 71 | 72 | 75 | 76 | 77 | 82 | 83 | 84 | 85 | 86 | 87 | 88 | 89 | 90 | 91 | 92 | 93 | 94 | 95 | 96 | 97 | 98 | 99 | 100 | 101 | 102 | 103 | 104 | 105 | 106 | 107 | 108 | 109 | 110 | 111 | 112 | 113 | 114 | 115 | 116 | 117 | 118 | 119 | 120 | 121 | 129 | 130 | 135 | 136 | 137 | 138 | 142 | 143 | 148 | 149 |         </div>', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (28, 8, 152, 'hgjfg', 'hfhgj', 'hgfjhgfj', '', '', 'jhgfhgjf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (29, 8, 153, 'gfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshf', 'gfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshf', 'gfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshf', '', '', 'gfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshfgfdshf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(30, 30, 155, 'Matze', 'Maciossek', '', '', '', 'Vorlesung', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(31, 2, 110, 'asdfasdfasd', 'fasdfasdfasdf', '', '', '', 'asdfsadfasdfa', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(32, 2, 172, 'asdfadsfad', 'asdfasdfasd', '', '', '', 'asdfasdfasdf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+(30, 2, 110, 'asdfasdfasd', 'fasdfasdfasdf', '', '', '', 'asdfsadfasdfa', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(31, 2, 172, 'asdfadsfad', 'asdfasdfasd', '', '', '', 'asdfasdfasdf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `tans`
---
-
-CREATE TABLE `tans` (
-  `id` int(11) NOT NULL,
-  `userID` int(11) NOT NULL,
-  `tan` varchar(13) NOT NULL,
-  `used` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Daten für Tabelle `tans`
@@ -247,17 +177,6 @@ INSERT INTO `tans` (`id`, `userID`, `tan`, `used`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `user`
---
-
-CREATE TABLE `user` (
-  `ID` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL DEFAULT '0',
-  `email` varchar(100) NOT NULL DEFAULT '0',
-  `password` varchar(100) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
 -- Daten für Tabelle `user`
 --
 
@@ -294,32 +213,6 @@ INSERT INTO `user` (`ID`, `username`, `email`, `password`) VALUES
 (33, 'demo', 'demo@demo.com', 'fe01ce2a7fbac8fafaed7c982a04e229');
 
 --
--- Indizes der exportierten Tabellen
---
-
---
--- Indizes für die Tabelle `entries`
---
-ALTER TABLE `entries`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `tanID` (`tanID`),
-  ADD KEY `userID` (`userID`);
-
---
--- Indizes für die Tabelle `tans`
---
-ALTER TABLE `tans`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `userID` (`userID`);
-
---
--- Indizes für die Tabelle `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`ID`),
-  ADD UNIQUE KEY `user` (`username`);
-
---
 -- AUTO_INCREMENT für exportierte Tabellen
 --
 
@@ -327,7 +220,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT für Tabelle `entries`
 --
 ALTER TABLE `entries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT für Tabelle `tans`
@@ -340,25 +233,3 @@ ALTER TABLE `tans`
 --
 ALTER TABLE `user`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
---
--- Constraints der exportierten Tabellen
---
-
---
--- Constraints der Tabelle `entries`
---
-ALTER TABLE `entries`
-  ADD CONSTRAINT `entries_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `user` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `entries_ibfk_2` FOREIGN KEY (`tanID`) REFERENCES `tans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints der Tabelle `tans`
---
-ALTER TABLE `tans`
-  ADD CONSTRAINT `tans_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `user` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
