@@ -21,9 +21,5 @@ services:
     depends_on:
       - db
 
-volumes:
-  db-data:
-
-
 # docker run -d -p 5455:3306 -v `pwd`/setup:/docker-entrypoint-initdb.d/ -v `pwd`/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Test mariadb
 # docker run -d -p 80:80 --name my-apache-php-app -v `pwd`:/var/www/html php:7.0-apache
