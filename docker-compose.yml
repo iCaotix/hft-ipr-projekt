@@ -7,17 +7,17 @@ services:
     ports:
       - "5455:3306"
     volumes:
-      - "db-data:/var/lib/mysql"
+      - "./sql/db-data:/var/lib/mysql"
     environment:
       MYSQL_ROOT_PASSWORD: "Test"
 
   webserver:
     build:
-      context: .
+      context: ./frontend
     ports:
       - "80:80"
     volumes:
-      - "./:/var/www/html"
+      - "./frontend:/var/www/html"
     depends_on:
       - db
 
